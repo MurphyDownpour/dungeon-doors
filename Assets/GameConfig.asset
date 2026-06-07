@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c34a90b0da6ea843bd2feac92d1dbc0, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GameConfig
+  startingHP: 100
+  startingDamage: 10
+  startingAttackSpeed: 1
+  startingCritChance: 0.05
+  startingGold: 0
+  normalEnemyBaseHP: 30
+  normalEnemyHPPerRoom: 5
+  normalEnemyBaseDamage: 5
+  normalEnemyDamagePerRoom: 1
+  normalEnemyAttackSpeed: 1
+  eliteHPMultiplier: 3
+  eliteDamageMultiplier: 2
+  eliteGoldReward: 50
+  eliteSoulReward: 1
+  bossHPMultiplier: 8
+  bossDamageMultiplier: 3
+  bossGoldReward: 150
+  bossSoulReward: 3
+  bossRoomInterval: 10
+  normalGoldMin: 10
+  normalGoldMax: 30
+  normalEnemyCountMin: 1
+  normalEnemyCountMax: 3
+  doorDamageBonusPercent: 0.15
+  doorAttackSpeedBonusPercent: 0.15
+  doorMaxHPBonusPercent: 0.2
+  doorRestoreHPPercent: 0.2
+  doorGoldGainBonusPercent: 0.25
+  doorCritChanceBonus: 0.05
+  weightNormal: 5
+  weightElite: 3
+  weightShop: 2
+  shopItems:
+  - itemName: Sword
+    cost: 50
+    description: +5 Damage
+    effect: 0
+    effectValue: 5
+  - itemName: Armor
+    cost: 50
+    description: +25 Max HP
+    effect: 1
+    effectValue: 25
+  - itemName: Gloves
+    cost: 75
+    description: +10% Attack Speed
+    effect: 2
+    effectValue: 0.1
+  - itemName: Ring
+    cost: 75
+    description: +5% Crit Chance
+    effect: 3
+    effectValue: 0.05
+  upgrades:
+  - upgradeName: Damage Upgrade
+    costPerLevel: 1
+    description: +1 Starting Damage per level
+    effect: 0
+    effectPerLevel: 1
+  - upgradeName: HP Upgrade
+    costPerLevel: 1
+    description: +5 Starting HP per level
+    effect: 1
+    effectPerLevel: 5
+  - upgradeName: Gold Upgrade
+    costPerLevel: 1
+    description: +5 Starting Gold per level
+    effect: 2
+    effectPerLevel: 5
